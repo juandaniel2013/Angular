@@ -2,5 +2,10 @@
   <h1>
     Bienvenido al {{title}}
   </h1>
-  <videojuego></videojuego>
+
+  <button (click)="cambiarEstado(false)" *ngIf="mostrar_videojuegos">Ocultar VideoJuegos</button>
+  <button (click)="cambiarEstado(true)" *ngIf="!mostrar_videojuegos">Mostrar VideoJuegos</button>
+
+  <videojuego *ngIf="mostrar_videojuegos"></videojuego>
+  <app-cursos></app-cursos>
 </div>

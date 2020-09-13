@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Master de JavaScript y Angular';
+  mostrar_videojuegos: boolean = true;
+
+  cambiarEstado(value){
+    this.mostrar_videojuegos = value;
+  }
 }
